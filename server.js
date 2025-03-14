@@ -57,7 +57,7 @@ app.get("/courses",(req,res) => {
 })
 
 app.use("/",(req,res) => {
-    return res.json({status:true,email:req.mail})
+    return res.json({name:"success"})
 })
 
 mongoose.connect(process.env.MONGO_URL).then(() =>{
